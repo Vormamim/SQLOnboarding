@@ -6,7 +6,7 @@
 
 ## Learning goals
 
-By the end of this lesson, students should be able to:
+By the end of this lesson, you should be able to:
 
 - combine previous skills in one script
 - create a simple menu-driven Python program
@@ -14,11 +14,11 @@ By the end of this lesson, students should be able to:
 
 ## Why this matters
 
-The mini project gives students a chance to combine isolated skills into one complete workflow they can explain and extend.
+The mini project gives you a chance to combine isolated skills into one complete workflow you can explain and extend.
 
 ## Key theory
 
-- Small projects help students connect isolated skills into one workflow.
+- Small projects help you connect isolated skills into one workflow.
 - Breaking work into steps makes database programs easier to understand.
 - Reusing simple SQL commands is enough to build a useful beginner app.
 
@@ -69,12 +69,12 @@ connection.commit()
 connection.close()
 ```
 
-## Student activity
+## Your activity
 
 1. Build the script exactly as shown.
 2. Add two more books.
 3. Run the script and confirm all books print in order.
-4. Ask students to explain which parts are Python and which parts are SQL.
+4. Explain which parts are Python and which parts are SQL.
 
 ## Stretch challenge
 

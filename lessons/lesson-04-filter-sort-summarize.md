@@ -6,7 +6,7 @@
 
 ## Learning goals
 
-By the end of this lesson, students should be able to:
+By the end of this lesson, you should be able to:
 
 - use `WHERE` to filter rows
 - use `ORDER BY` to sort results
@@ -14,7 +14,7 @@ By the end of this lesson, students should be able to:
 
 ## Why this matters
 
-Filtering and summarizing helps students answer questions with data instead of just printing everything in the table.
+Filtering and summarizing helps you answer questions with data instead of just printing everything in the table.
 
 ## Key theory
 
@@ -63,7 +63,7 @@ print("Total students:", total_students)
 connection.close()
 ```
 
-## Student activity
+## Your activity
 
 1. Type the script yourself in VS Code (do not paste the full block at once).
 2. Run the query for year group 10.
@@ -76,6 +76,8 @@ connection.close()
 - Ask students to write a query that only shows one column.
 - Ask students to sort by `year_group` first and `name` second.
 - Ask students to explain in one sentence why the `?` placeholder is safer than building SQL with string concatenation.
+- Write a query that only shows one column.
+- Sort by `year_group` first and `name` second.
 
 ## Exit check
 

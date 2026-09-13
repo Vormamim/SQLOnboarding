@@ -6,7 +6,7 @@
 
 ## Learning goals
 
-By the end of this lesson, students should be able to:
+By the end of this lesson, you should be able to:
 
 - create a table
 - choose simple column types
@@ -69,17 +69,17 @@ connection.commit()
 connection.close()
 ```
 
-## Student activity
+## Your activity
 
 1. Create the script shown above.
 2. Run it in VS Code.
-3. Change one student name and run it again.
+3. Change one name value and run it again.
 4. Discuss why `IF NOT EXISTS` is useful.
 5. Identify which column is the primary key.
 
 ## Stretch challenge
 
-- Add a third student.
+- Add a third row.
 - Add a new `TEXT` column called `favorite_subject`.
 
 ## Exit check
