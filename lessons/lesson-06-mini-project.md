@@ -46,7 +46,11 @@ CREATE TABLE IF NOT EXISTS books (
 )
 """)
 
+cursor.execute("DELETE FROM books")
+
 cursor.execute("INSERT INTO books (title, author) VALUES (?, ?)", ("Holes", "Louis Sachar"))
+cursor.execute("INSERT INTO books (title, author) VALUES (?, ?)", ("Wonder", "R. J. Palacio"))
+cursor.execute("INSERT INTO books (title, author) VALUES (?, ?)", ("The Hobbit", "J. R. R. Tolkien"))
 cursor.execute("SELECT title, author FROM books ORDER BY title")
 
 for title, author in cursor.fetchall():

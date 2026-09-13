@@ -4,7 +4,7 @@ Beginner-friendly course planning materials for learning SQLite with Python in V
 
 ## Course overview
 
-This repository now contains a **6-8 hour stepped tutorial plan** for total beginners. The course is organized as a series of Markdown lessons with:
+This repository now contains a **6–8 hour stepped tutorial plan** for total beginners. The course is organized as a series of Markdown lessons with:
 
 - key theory
 - beginner glossary terms

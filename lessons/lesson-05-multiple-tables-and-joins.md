@@ -42,6 +42,14 @@ connection = sqlite3.connect("school.db")
 cursor = connection.cursor()
 
 cursor.execute("""
+CREATE TABLE IF NOT EXISTS students (
+    id INTEGER PRIMARY KEY,
+    name TEXT NOT NULL,
+    year_group INTEGER
+)
+""")
+
+cursor.execute("""
 CREATE TABLE IF NOT EXISTS courses (
     id INTEGER PRIMARY KEY,
     course_name TEXT NOT NULL,
@@ -49,9 +57,25 @@ CREATE TABLE IF NOT EXISTS courses (
 )
 """)
 
+cursor.execute("DELETE FROM students")
+cursor.execute("DELETE FROM courses")
+
+cursor.execute(
+    "INSERT INTO students (name, year_group) VALUES (?, ?)",
+    ("Ava", 10)
+)
+cursor.execute(
+    "INSERT INTO students (name, year_group) VALUES (?, ?)",
+    ("Leo", 11)
+)
+
 cursor.execute(
     "INSERT INTO courses (course_name, student_id) VALUES (?, ?)",
     ("Science Club", 1)
+)
+cursor.execute(
+    "INSERT INTO courses (course_name, student_id) VALUES (?, ?)",
+    ("Math Team", 2)
 )
 
 cursor.execute("""
@@ -70,7 +94,7 @@ connection.close()
 
 ## Student activity
 
-1. Create the second table.
+1. Create both tables in one script.
 2. Add one or two course records.
 3. Run the `JOIN` query.
 4. Explain which columns are used to connect the tables.
