@@ -4,12 +4,27 @@ Beginner-friendly course planning materials for learning SQLite with Python in V
 
 ## Course overview
 
-This repository contains a stepped tutorial plan for total beginners. The full sequence is designed for **6–8 hours** and detailed in [course-plan.md](course-plan.md). The course is organized as a series of Markdown lessons with:
+This repository contains a stepped tutorial plan for total beginners. The full sequence is designed for **6–8 hours**
+
+This an essential bridge for the future. You should be able to connect your code (python or other) as an engine to SQL as a data-source.
+
+Consider building a 'to do list' application (a classic beginner app). SQL is the datastore behind the engine and the front end display.
+SQL is very flexible - it works with multiple wrappers such as HTML and PHP and is a key part of web development.
+
+The course is organised as a series of Markdown lessons with:
 
 - key theory
 - beginner glossary terms
 - explicit code examples
 - guided activities
+
+Key habits from this course:
+
+- start to create meaningful commits with genuinely useful information
+- use a structured repo to evidence your learning
+- Do not use Generative AI to skip learning in favour of 'getting it done'
+- Experimenting with code to see where it breaks or can be extended
+- Expliticy connecting theory terms to implemented code
 
 ## Suggested lesson sequence
 
