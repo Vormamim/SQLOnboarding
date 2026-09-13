@@ -36,11 +36,15 @@ Using more than one table introduces the relational thinking that makes database
 Create a file named `lesson5_join.py`:
 
 ```python
+"""Lesson 5: Create related tables and combine them with a JOIN."""
+
 import sqlite3
 
 connection = sqlite3.connect("school.db")
+# Cursor is the command runner for every SQL statement in this script.
 cursor = connection.cursor()
 
+# Build the first table.
 cursor.execute("""
 CREATE TABLE IF NOT EXISTS students (
     id INTEGER PRIMARY KEY,
@@ -49,6 +53,7 @@ CREATE TABLE IF NOT EXISTS students (
 )
 """)
 
+# Build the second table, which stores the related student_id value.
 cursor.execute("""
 CREATE TABLE IF NOT EXISTS courses (
     id INTEGER PRIMARY KEY,
@@ -57,6 +62,7 @@ CREATE TABLE IF NOT EXISTS courses (
 )
 """)
 
+# Remove old data so each run starts cleanly.
 cursor.execute("DELETE FROM students")
 cursor.execute("DELETE FROM courses")
 
@@ -72,6 +78,7 @@ cursor.execute(
 )
 leo_id = cursor.lastrowid
 
+# Use lastrowid values so each course links to the correct student row.
 cursor.execute(
     "INSERT INTO courses (course_name, student_id) VALUES (?, ?)",
     ("Science Club", ava_id)
@@ -81,6 +88,7 @@ cursor.execute(
     ("Math Team", leo_id)
 )
 
+# JOIN combines student names with their matching course names.
 cursor.execute("""
 SELECT students.name, courses.course_name
 FROM students
@@ -91,6 +99,7 @@ rows = cursor.fetchall()
 for row in rows:
     print(row)
 
+# Save table changes before closing the database.
 connection.commit()
 connection.close()
 ```

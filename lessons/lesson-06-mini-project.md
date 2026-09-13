@@ -33,11 +33,15 @@ The mini project gives students a chance to combine isolated skills into one com
 Create a file named `lesson6_project.py`:
 
 ```python
+"""Lesson 6: Build a small books database script."""
+
 import sqlite3
 
 connection = sqlite3.connect("school.db")
+# Cursor executes SQL commands and reads query results.
 cursor = connection.cursor()
 
+# Create the books table once, then reuse it on later runs.
 cursor.execute("""
 CREATE TABLE IF NOT EXISTS books (
     id INTEGER PRIMARY KEY,
@@ -46,16 +50,21 @@ CREATE TABLE IF NOT EXISTS books (
 )
 """)
 
+# Reset demo data so lesson output stays consistent.
 cursor.execute("DELETE FROM books")
 
+# Add sample book records.
 cursor.execute("INSERT INTO books (title, author) VALUES (?, ?)", ("Holes", "Louis Sachar"))
 cursor.execute("INSERT INTO books (title, author) VALUES (?, ?)", ("Wonder", "R. J. Palacio"))
 cursor.execute("INSERT INTO books (title, author) VALUES (?, ?)", ("The Hobbit", "J. R. R. Tolkien"))
+# Query all books in alphabetical order by title.
 cursor.execute("SELECT title, author FROM books ORDER BY title")
 
+# fetchall() gives a list of (title, author) tuples to loop through.
 for title, author in cursor.fetchall():
     print(f"{title} by {author}")
 
+# Commit saves inserted rows to the database file.
 connection.commit()
 connection.close()
 ```
