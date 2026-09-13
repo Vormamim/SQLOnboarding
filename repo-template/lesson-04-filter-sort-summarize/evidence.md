@@ -13,8 +13,18 @@
 - Command run:
 - Terminal output pasted below:
 
+## Typed-work confirmation
+- Briefly describe how you typed your changes step-by-step (including at least one pause to run and check output):
+
+## Prediction before run
+- Query version:
+- My prediction (filtered rows, order, or count):
+- What actually happened:
+
 ## SQL/Python changes I made
-- 
+- Change 1:
+- Change 2:
+- Why these changes were mine (not just starter code):
 
 ## Error and fix
 - Error I hit:
@@ -29,4 +39,6 @@
 - [ ] Script runs without unhandled errors
 - [ ] I included at least 2 lesson commits
 - [ ] I included filtered/sorted summary evidence
+- [ ] I showed a prediction and compared it to actual output
+- [ ] I made at least 2 personal changes to the starter work
 - [ ] I answered all questions in my own words

@@ -59,10 +59,11 @@ connection.close()
 
 ## Student activity
 
-1. Run the script and read the output.
-2. Change the query to `SELECT name FROM students`.
-3. Add one more student in the database and run the script again.
-4. Count how many rows are returned.
+1. Type the script yourself in VS Code (do not paste the full block at once).
+2. Run the script and read the output.
+3. Change the query to `SELECT name FROM students`.
+4. Add one more student in the database with your own name choice and run again.
+5. Before each run, predict how many rows/columns you expect, then compare with actual output.
 
 ## Stretch challenge
 
@@ -72,6 +73,7 @@ connection.close()
 for student_id, name, year_group in rows:
     print(f"{name} is in year {year_group}.")
 ```
+- Explain why the formatted output is easier to read than printing raw tuples.
 
 ## Exit check
 
