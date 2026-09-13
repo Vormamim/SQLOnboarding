@@ -23,6 +23,7 @@ This repository contains a stepped tutorial plan for total beginners. The full s
 ## Planning documents
 
 - [Course Plan](course-plan.md)
+- [Course Repository Template](repo-template/README.md)
 
 ## Intended audience
 
