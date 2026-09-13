@@ -1,0 +1,76 @@
+# Lesson 4 - Filter, Sort, and Summarize
+
+## Time
+
+**75 minutes**
+
+## Learning goals
+
+By the end of this lesson, students should be able to:
+
+- use `WHERE` to filter rows
+- use `ORDER BY` to sort results
+- use `COUNT()` to summarize data
+
+## Why this matters
+
+Filtering and summarizing helps students answer questions with data instead of just printing everything in the table.
+
+## Key theory
+
+- `WHERE` narrows results to matching rows.
+- `ORDER BY` changes the order of returned results.
+- Aggregate functions such as `COUNT()` summarize data.
+- Parameterized queries help keep input handling safe and predictable.
+
+## Glossary
+
+- **WHERE**: filters rows
+- **ORDER BY**: sorts rows
+- **COUNT()**: counts matching rows
+- **aggregate**: a summary calculation over many rows
+- **parameterized query**: a query that safely inserts values using placeholders
+
+## Explicit code
+
+Create a file named `lesson4_filter.py`:
+
+```python
+import sqlite3
+
+connection = sqlite3.connect("school.db")
+cursor = connection.cursor()
+
+year_group = 10
+cursor.execute(
+    "SELECT name, year_group FROM students WHERE year_group = ? ORDER BY name",
+    (year_group,)
+)
+
+rows = cursor.fetchall()
+for row in rows:
+    print(row)
+
+cursor.execute("SELECT COUNT(*) FROM students")
+total_students = cursor.fetchone()[0]
+print("Total students:", total_students)
+
+connection.close()
+```
+
+## Student activity
+
+1. Run the query for year group 10.
+2. Change the value to 11.
+3. Compare sorted and unsorted output.
+4. Predict the result of `COUNT(*)` before running the code.
+
+## Stretch challenge
+
+- Ask students to write a query that only shows one column.
+- Ask students to sort by `year_group` first and `name` second.
+
+## Exit check
+
+- What does `WHERE` do?
+- Why is `?` used in the query?
