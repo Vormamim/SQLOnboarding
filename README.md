@@ -35,20 +35,14 @@ Key habits from this course:
 5. [Lesson 5 - Work with Multiple Tables](lessons/lesson-05-multiple-tables-and-joins.md)
 6. [Lesson 6 - Build a Mini Project in Python](lessons/lesson-06-mini-project.md)
 
-## Planning documents
+## Student Resources
 
-- [Course Plan](course-plan.md)
 - [Course Repository Template](repo-template/README.md)
 
 ## Included sample database
 
 - `student.db` is a small prebuilt SQLite database for quick exploration.
 - It includes `students` and `courses` tables with beginner-friendly sample data.
-- The lessons still guide learners to create their own `school.db` file from scratch.
+- - It is not 'the solution' of the answer.
 
-## Intended audience
 
-- total beginners
-- learners using **SQLite**
-- learners writing **Python**
-- learners working in **VS Code**
