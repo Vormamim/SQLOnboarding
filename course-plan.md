@@ -2,7 +2,7 @@
 
 ## Goal
 
-Create a stepped beginner course that helps learners learn how to:
+Create a stepped beginner course that helps beginners learn how to:
 
 - use SQLite as a simple local database
 - connect to SQLite from Python
