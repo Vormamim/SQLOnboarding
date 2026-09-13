@@ -6,7 +6,7 @@
 
 ## Learning goals
 
-By the end of this lesson, students should be able to:
+By the end of this lesson, you should be able to:
 
 - use `SELECT` to read data
 - use `fetchall()` to get query results in Python
@@ -14,14 +14,14 @@ By the end of this lesson, students should be able to:
 
 ## Why this matters
 
-Students usually care most about seeing stored information again, so reading data is where SQL starts to feel practical and rewarding.
+You will likely care most about seeing stored information again, so reading data is where SQL starts to feel practical and rewarding.
 
 ## Key theory
 
 - `SELECT` reads data from a table.
 - `*` means "all columns."
 - Python can store query results in lists of rows.
-- Clean output helps students understand what the data means.
+- Clean output helps you understand what the data means.
 
 ## Glossary
 
@@ -57,11 +57,11 @@ for row in rows:
 connection.close()
 ```
 
-## Student activity
+## Your activity
 
 1. Run the script and read the output.
 2. Change the query to `SELECT name FROM students`.
-3. Add one more student in the database and run the script again.
+3. Add one more row in the database and run the script again.
 4. Count how many rows are returned.
 
 ## Stretch challenge

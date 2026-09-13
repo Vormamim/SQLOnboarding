@@ -9,7 +9,7 @@ This repository contains a stepped tutorial plan for total beginners. The full s
 - key theory
 - beginner glossary terms
 - explicit code examples
-- guided student activities
+- guided activities
 
 ## Suggested lesson sequence
 
@@ -28,6 +28,6 @@ This repository contains a stepped tutorial plan for total beginners. The full s
 ## Intended audience
 
 - total beginners
-- students using **SQLite**
-- students writing **Python**
-- students working in **VS Code**
+- learners using **SQLite**
+- learners writing **Python**
+- learners working in **VS Code**
