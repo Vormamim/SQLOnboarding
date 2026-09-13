@@ -51,6 +51,8 @@ CREATE TABLE IF NOT EXISTS students (
 )
 """)
 
+cursor.execute("DELETE FROM students")
+
 cursor.execute("INSERT INTO students (name, year_group) VALUES (?, ?)", ("Ava", 10))
 cursor.execute("INSERT INTO students (name, year_group) VALUES (?, ?)", ("Leo", 11))
 

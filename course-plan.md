@@ -53,7 +53,7 @@ Each lesson should include:
 2. **Why this matters**
 3. **Key theory**
 4. **Glossary**
-5. **Step-by-step code**
+5. **Explicit code**
 6. **Student activity**
 7. **Stretch challenge**
 8. **Exit check / reflection**

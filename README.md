@@ -1,10 +1,10 @@
-# SQLOnboarding
+# SQLOnboarding: SQLite Beginner Course Plan
 
 Beginner-friendly course planning materials for learning SQLite with Python in VS Code.
 
 ## Course overview
 
-This repository now contains a **6–8 hour stepped tutorial plan** for total beginners. The course is organized as a series of Markdown lessons with:
+This repository contains a stepped tutorial plan for total beginners. The full sequence is designed for **6–8 hours** and detailed in [course-plan.md](course-plan.md). The course is organized as a series of Markdown lessons with:
 
 - key theory
 - beginner glossary terms

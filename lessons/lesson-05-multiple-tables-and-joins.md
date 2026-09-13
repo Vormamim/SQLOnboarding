@@ -64,18 +64,21 @@ cursor.execute(
     "INSERT INTO students (name, year_group) VALUES (?, ?)",
     ("Ava", 10)
 )
+ava_id = cursor.lastrowid
+
 cursor.execute(
     "INSERT INTO students (name, year_group) VALUES (?, ?)",
     ("Leo", 11)
 )
+leo_id = cursor.lastrowid
 
 cursor.execute(
     "INSERT INTO courses (course_name, student_id) VALUES (?, ?)",
-    ("Science Club", 1)
+    ("Science Club", ava_id)
 )
 cursor.execute(
     "INSERT INTO courses (course_name, student_id) VALUES (?, ?)",
-    ("Math Team", 2)
+    ("Math Team", leo_id)
 )
 
 cursor.execute("""
