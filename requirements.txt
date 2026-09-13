@@ -13,6 +13,3 @@
 # For linting Python code (optional, recommended for learning)
 # pylint>=2.0.0
 # flake8>=4.0.0
-
-# For testing student code (optional, for instructors)
-# pytest>=6.0.0
