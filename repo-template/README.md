@@ -1,6 +1,6 @@
 # Course Repository Template (Student Use)
 
-Use this folder as a starter structure for each student's course repository.
+Use this folder as a starter structure for your course repository.
 
 ## Folder layout
 
