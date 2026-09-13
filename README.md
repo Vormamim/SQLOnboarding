@@ -25,6 +25,12 @@ This repository contains a stepped tutorial plan for total beginners. The full s
 - [Course Plan](course-plan.md)
 - [Course Repository Template](repo-template/README.md)
 
+## Included sample database
+
+- `student.db` is a small prebuilt SQLite database for quick exploration.
+- It includes `students` and `courses` tables with beginner-friendly sample data.
+- The lessons still guide learners to create their own `school.db` file from scratch.
+
 ## Intended audience
 
 - total beginners
