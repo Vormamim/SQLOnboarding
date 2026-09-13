@@ -106,13 +106,18 @@ connection.close()
 
 ## Your activity
 
-1. Create both tables in one script.
-2. Add one or two course records.
-3. Run the `JOIN` query.
-4. Explain which columns are used to connect the tables.
+1. Type the script yourself in VS Code (do not paste the full block at once).
+2. Create both tables in one script.
+3. Add one or two course records using your own course names.
+4. Before running the `JOIN`, predict which student-course pairs you expect to see.
+5. Run the `JOIN` query and compare the actual output with your prediction.
+6. Explain which columns are used to connect the tables.
 
 ## Stretch challenge
 
+- Add a second course for a different student.
+- Ask students to predict the joined output before running the script.
+- Ask students to modify one link (`student_id`) and explain how that changed the joined output.
 - Add a second course for a different row in `students`.
 - Predict the joined output before running the script.
 

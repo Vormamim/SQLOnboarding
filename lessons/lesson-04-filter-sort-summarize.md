@@ -65,13 +65,17 @@ connection.close()
 
 ## Your activity
 
-1. Run the query for year group 10.
-2. Change the value to 11.
-3. Compare sorted and unsorted output.
-4. Predict the result of `COUNT(*)` before running the code.
+1. Type the script yourself in VS Code (do not paste the full block at once).
+2. Run the query for year group 10.
+3. Change the value to 11, then try one year group value that returns fewer rows.
+4. Compare sorted and unsorted output.
+5. Predict the result of `COUNT(*)` before running the code, then check if your prediction was correct.
 
 ## Stretch challenge
 
+- Ask students to write a query that only shows one column.
+- Ask students to sort by `year_group` first and `name` second.
+- Ask students to explain in one sentence why the `?` placeholder is safer than building SQL with string concatenation.
 - Write a query that only shows one column.
 - Sort by `year_group` first and `name` second.
 
