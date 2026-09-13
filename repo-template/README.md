@@ -1,4 +1,4 @@
-# Course Repository Template (Student Use)
+# Course Repository Template
 
 Use this folder as a starter structure for your course repository.
 

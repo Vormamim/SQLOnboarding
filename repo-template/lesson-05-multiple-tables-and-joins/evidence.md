@@ -1,9 +1,5 @@
 # Lesson 05 Evidence Pro-Forma
 
-## Student details
-- Name:
-- Date:
-
 ## Commit evidence (minimum 2)
 - Commit 1 hash + message:
 - Commit 2 hash + message:

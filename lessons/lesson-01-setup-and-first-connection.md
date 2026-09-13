@@ -6,7 +6,7 @@
 
 ## Learning goals
 
-By the end of this lesson, students should be able to:
+By the end of this lesson, you should be able to:
 
 - explain what a database is
 - explain what SQLite is
@@ -16,11 +16,11 @@ By the end of this lesson, students should be able to:
 
 ## Why this matters
 
-Students need a clear mental model of how Python, SQLite, files, and VS Code fit together before they can write useful database programs.
+You need a clear mental model of how Python, SQLite, files, and VS Code fit together before you can write useful database programs.
 
 ## Before you start
 
-Students should have:
+You should have:
 
 - VS Code installed
 - Python 3 installed
@@ -77,7 +77,7 @@ Database connected!
 Database closed!
 ```
 
-## Student activity
+## Your activity
 
 1. Open VS Code.
 2. Create a folder for the project and open that folder in VS Code.

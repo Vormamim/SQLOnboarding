@@ -2,7 +2,7 @@
 
 ## Goal
 
-Create a stepped beginner course that helps students learn how to:
+Create a stepped beginner course that helps learners learn how to:
 
 - use SQLite as a simple local database
 - connect to SQLite from Python
@@ -13,7 +13,7 @@ Create a stepped beginner course that helps students learn how to:
 ## Target learner
 
 - total beginners
-- high school or early college students
+- high school or early college learners
 - learners with little or no database experience
 - learners who may also be new to Python files, terminals, and VS Code
 
@@ -54,7 +54,7 @@ Each lesson should include:
 3. **Key theory**
 4. **Glossary**
 5. **Explicit code**
-6. **Student activity**
+6. **Your activity**
 7. **Stretch challenge**
 8. **Exit check / reflection**
 
@@ -72,8 +72,8 @@ Each lesson should include:
 - Keep examples small and visible.
 - Introduce one new SQL idea at a time.
 - Pair every SQL command with a Python example.
-- Use real beginner-friendly contexts such as books, students, or games.
-- End each lesson with a short activity students can complete independently.
+- Use real beginner-friendly contexts such as books, clubs, or games.
+- End each lesson with a short activity learners can complete independently.
 
 ## Lesson summaries
 

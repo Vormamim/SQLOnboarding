@@ -6,7 +6,7 @@
 
 ## Learning goals
 
-By the end of this lesson, students should be able to:
+By the end of this lesson, you should be able to:
 
 - explain why databases often use more than one table
 - create a second table
@@ -104,7 +104,7 @@ connection.commit()
 connection.close()
 ```
 
-## Student activity
+## Your activity
 
 1. Create both tables in one script.
 2. Add one or two course records.
@@ -113,8 +113,8 @@ connection.close()
 
 ## Stretch challenge
 
-- Add a second course for a different student.
-- Ask students to predict the joined output before running the script.
+- Add a second course for a different row in `students`.
+- Predict the joined output before running the script.
 
 ## Exit check
 
