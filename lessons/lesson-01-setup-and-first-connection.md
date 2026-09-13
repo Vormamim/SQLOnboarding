@@ -18,12 +18,23 @@ By the end of this lesson, students should be able to:
 
 Students need a clear mental model of how Python, SQLite, files, and VS Code fit together before they can write useful database programs.
 
+## Before you start
+
+Students should have:
+
+- VS Code installed
+- Python 3 installed
+- permission to create files in a project folder
+- access to the VS Code terminal
+
 ## Key theory
 
 - A **database** stores information in an organized way.
 - **SQLite** is a lightweight database engine that stores data in a single file.
 - **Python** can talk to SQLite using the built-in `sqlite3` module.
 - A **connection** lets Python open and work with a database file.
+- Running a Python script from the terminal executes the instructions in the file from top to bottom.
+- If the database file does not exist yet, SQLite creates it when Python connects to it.
 
 ## Glossary
 
@@ -33,10 +44,12 @@ Students need a clear mental model of how Python, SQLite, files, and VS Code fit
 - **column**: one type of information in a table
 - **SQLite**: a file-based SQL database engine
 - **connection**: the active link between Python and the database
+- **script**: a saved Python file
+- **terminal**: the text-based area where commands are typed and run
 
 ## Explicit code
 
-Create a file named `lesson1_connect.py`:
+Inside your project folder, create a file named `lesson1_connect.py`:
 
 ```python
 import sqlite3
@@ -53,21 +66,33 @@ Run it in the VS Code terminal:
 python lesson1_connect.py
 ```
 
+Expected output:
+
+```text
+Database connected!
+Database closed!
+```
+
 ## Student activity
 
 1. Open VS Code.
-2. Create a folder for the project.
-3. Create `lesson1_connect.py`.
-4. Type the code exactly as shown.
-5. Run the file from the terminal.
-6. Confirm that a `school.db` file appears in the folder.
+2. Create a folder for the project and open that folder in VS Code.
+3. Open the VS Code terminal.
+4. Create `lesson1_connect.py`.
+5. Type the code exactly as shown.
+6. Run the file from the terminal.
+7. Confirm that the terminal prints both messages.
+8. Confirm that a `school.db` file appears in the folder.
+9. Ask a partner to explain what part of the script creates the database file.
 
 ## Stretch challenge
 
 - Change the database file name to `library.db`.
-- Add one more `print()` line explaining what the script is doing.
+- Add one more `print()` line explaining what the script is doing before the connection opens.
+- Delete the database file, run the script again, and explain what happened.
 
 ## Exit check
 
 - What is the difference between Python and SQLite?
 - What file was created when the script ran?
+- What does the connection do?
